@@ -1,0 +1,17 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: agent-order-backend
+  ai:
+    dashscope:
+      api-key: ${AI_DASHSCOPE_API_KEY:}
+      chat:
+        options:
+          model: qwen-plus
+          temperature: 0.2
+
+app:
+  chat:
+    welcome-message: 您好，欢迎来到国贸航空客户支持。请问有什么可以帮您？
